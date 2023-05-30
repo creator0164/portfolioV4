@@ -1,0 +1,57 @@
+.about .section-title,.portfolio .sec-title h1{
+    font-size:30px
+}
+.about .sub-title{
+    font-size:25px
+}
+.about__download {
+    color: var(--yellow);
+     border-bottom: 2px solid; 
+     text-decoration: none
+}
+.about{
+    padding:60px 15px
+}
+.about.container{
+    max-width:1100px;
+    margin:auto
+}
+.about .row{
+    overflow:auto
+}
+.about .row .col{
+    float:left;
+    width:50%;
+    padding:15px
+}
+.about .section-title{
+    font-size:40px;
+    margin-bottom:30px
+}
+.about img{
+    width:100%;
+    max-width:190px;
+    margin-bottom:37.2px
+}
+.about .sub-title{
+    font-size:30px;
+    margin-bottom:15px;
+    margin-top:30px
+}
+.about .sub-title::before{
+    content:'</>';
+    font-family:consolas;
+    color:var(--yellow)
+}
+.about .content__justify {
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    margin-bottom: 20px;
+}
+@media (max-width:425px){
+    .about .row .col,.project,.resources-container .context{
+        width:100%
+    }
+}

@@ -1,0 +1,141 @@
+:root{
+    --black-sidebar: #041023;
+    --black:#0A1931;
+    --white:#EFEFEF;
+    --blue:#185ADB;
+    --yellow:#FFC947
+    /* --black:#0A1931;
+    --white:#EFEFEF;
+    --blue:#185ADB;
+    --yellow:#FFC947 */
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+    font-size:18px;
+    color:var(--white)
+}
+body,html{
+    scroll-behavior:smooth
+}
+html{
+    background-color:var(--black)
+}
+::-webkit-scrollbar{
+    width:8px
+}
+::-webkit-scrollbar-thumb{
+    background-color:var(--blue);
+    border-radius:999px
+}
+::selection{
+    color:var(--black);
+    background:var(--yellow);
+    opacity:1!important
+}
+p{
+    opacity:.9;
+    line-height:31px
+}
+
+.main-page{
+    padding-left:325px
+}
+
+
+
+
+.sec-title{
+    transition:all .3s cubic-bezier(.6,-.28,.735,.045)
+}
+
+.project-container{
+    overflow:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap
+}
+
+#particles-js{
+    position:fixed;
+    z-index:-999;
+    inset:0;
+    height:100vh
+}
+
+.sidenav-activate{
+    position:fixed;
+    bottom:0;
+    left:0;
+    margin:20px;
+    padding:15px;
+    border-radius:99999px;
+    background-color:var(--blue);
+    font-size:20px;
+    border:0;
+    transition:background .3s cubic-bezier(.6,-.28,.735,.045);
+    z-index:6;
+    width:60px;
+    height:60px;
+    display:none
+}
+.sidenav-activate i.material-icons{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    color:var(--white)
+}
+.sidenav-activate.active i.material-icons{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    color:var(--black)
+}
+.sidenav-activate.active{
+    background-color:var(--yellow)
+}
+.social-medias a i{
+    font-size:25px;
+    margin:5px
+}
+
+@media (max-width:768px){
+    
+    .indicator.hide{
+        display:none
+    }
+    .main-page{
+        padding-left:0
+    }
+    
+    *{
+        font-size:16px
+    }
+    
+    
+    
+    
+    
+    .sidenav-activate{
+        display:block!important
+    }
+}
+@media (max-width:425px){
+    .title-section::-webkit-scrollbar{
+        display:none
+    }
+    .title-section.activate-search .two-rows.sec-title{
+        opacity:0;
+        width:0;
+        overflow-x:hidden
+    }
+    .title-section.activate-search .two-rows.search{
+        width:100%;
+        overflow-x:hidden
+    }
+    
+}

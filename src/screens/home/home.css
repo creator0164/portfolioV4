@@ -1,0 +1,46 @@
+.hero.container{
+    margin:auto;
+    max-width:500px
+}
+.hero h1{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:15px;
+    margin-top:200px
+}
+.hero h1 span{
+    font-size:50px;
+    color:var(--yellow)
+}
+.hero p{
+    opacity:.8;
+    text-align:center;
+    margin-bottom:71px
+}
+.hero p span{
+    color:var(--yellow);
+    font-weight:700
+}
+.hero a.button{
+    padding:12px 35px;
+    background-color:var(--blue);
+    border-radius:9999px;
+    text-decoration:none;
+    margin:0 5px
+}
+.hero a.yellow{
+    background-color:var(--yellow);
+    color:var(--black)
+}
+.hero .center-align{
+    text-align:center;
+    opacity:1!important
+}
+@media (max-width:768px){
+    .hero h1{
+        font-size:28px
+    }
+    .hero h1 span{
+        font-size:35px
+    }
+}

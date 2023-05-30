@@ -1,0 +1,71 @@
+.portfolio.container{
+    margin:auto;
+    max-width:1030px;
+    padding:50px 30px
+}
+.portfolio .title-section{
+    overflow:auto;
+    margin-bottom:72px
+}
+.portfolio .two-rows{
+    float:left;
+    width:50%
+}
+.portfolio .sec-title h1{
+    font-size:40px
+}
+.portfolio .title-section .search{
+    text-align:right;
+    transition:all .3s cubic-bezier(.6,-.28,.735,.045)
+}
+.portfolio .title-section .search input{
+    display:inline-block;
+    background-color:rgba(255,255,255,.14);
+    padding:12px 30px;
+    border-radius:9999px;
+    outline:0;
+    border:0;
+    width:100%;
+    max-width:400px
+}
+.portfolio .title-section .search input::placeholder{
+    color:var(--white)
+}
+.project{
+    width:33.33%;
+    min-height:300px;
+    padding:20px 15px
+}
+.project a.link{
+    text-decoration:none
+}
+.project img{
+    width:100%;
+    box-shadow:0 3px 6px rgba(0,0,0,.16);
+    margin-bottom:10px;
+    border-radius:10px
+}
+.project h3.project-title{
+    font-size:25px;
+    margin-bottom:10px
+}
+@media (max-width:425px){
+    .portfolio .title-section .search input{
+        padding:12px 17px;
+        padding-right:0
+    }
+}
+@media (max-width:768px){
+    .project h3.project-title{
+        font-size:20px;
+        margin-bottom:5px
+    }
+    .project img{
+        margin-bottom:0
+    }
+}
+@media (max-width:1024px){
+    .project{
+        width:50%
+    }
+}
